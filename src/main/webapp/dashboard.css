@@ -1,0 +1,91 @@
+.border-1-black{
+    border: 1px solid rgb(96, 96, 96);
+}
+
+.height-40{
+    height: 40%;
+}
+
+.pad-left{
+    padding-left: 10%;
+}
+
+.my-nav{
+    color: white;
+}
+
+.hoverEffect:hover{
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+}
+
+.my-nav:hover, .my-nav:focus{
+    color: rgb(0, 183, 249);
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.cardStyle{
+    width: 15%;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+#dialog{
+    z-index: 10000;
+    right: 2%;
+    top: 12%;
+}
+
+#filter{
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#profile-dialog{
+    z-index: 10000;
+    left: 25%;
+    top: 12%;
+}
+
+#profile-icon, #prifile-icon-clone{
+    width: 60px;
+    height: 60px;
+}
+
+#profile-icon-clone{
+    cursor: default;
+}
+
+#dialog, #logout-btn{
+    background-color: azure;
+}
+
+#logout-btn{
+    background-color: red;
+}
+
+#logout-btn:hover{
+    background-color: rgb(181, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+    .cardStyle{
+        width: 75%;
+        margin: auto;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #leave-form{
+        width: fit-content;
+    }
+  }
